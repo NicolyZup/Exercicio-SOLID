@@ -7,7 +7,6 @@ class FuncionarioAdm extends Funcionario {
         super(nome, cpf, numeroRegistro, orgaoLotacao, salario, 10);
         this.funcaoADm = funcaoADm;
         this.senioridade = senioridade;
-
     }
 
     public String getFuncaoADm() {
@@ -22,7 +21,7 @@ class FuncionarioAdm extends Funcionario {
         this.funcaoADm = funcaoADm;
     }
 
-    public void setSerionidade(String senioridade) {
+    public void setSenioridade(String senioridade) {
         this.senioridade = senioridade;
     }
 

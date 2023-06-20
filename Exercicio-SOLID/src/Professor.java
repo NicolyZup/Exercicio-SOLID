@@ -45,7 +45,7 @@ class Professor extends Funcionario {
         this.qtdTurmas = qtdTurmas;
     }
 
-    public void adiconaTurma(int turma){
+    public void adicionaTurma(int turma){
         qtdTurmas += turma;
     }
 

@@ -84,7 +84,7 @@ public class SistemaADM {
                 System.out.println("Informe o nome do(a) "+i+"º professor(a) supervisionado:");
                 String nomeProf = entrada.next();
 
-                coordenadorCriado.aicionarProfessor(nomeProf);
+                coordenadorCriado.adicionarProfessor(nomeProf);
             }
 
             coordenadores.add(coordenadorCriado);
@@ -124,18 +124,17 @@ public class SistemaADM {
 
            if(profEncontrado == null){
                System.out.println("Professor não localizado em sistema, por gentileza acione o administrador.");
+           } else {
+               Estagiario estagiarioCriado = new Estagiario(nomeInformado,cpfInformado,numeroRegistroInformado,orgaoInformado,
+                       salarioInformado,profEncontrado);
+
+               estagiarios.add(estagiarioCriado);
+
+               System.out.println("Cadastro realizado com sucesso!");
+               System.out.println("===============================");
+               estagiarioCriado.mostrarInformacoes();
            }
-
-           Estagiario estagiarioCriado = new Estagiario(nomeInformado,cpfInformado,numeroRegistroInformado,orgaoInformado,
-                  salarioInformado,profEncontrado);
-
-           estagiarios.add(estagiarioCriado);
-
-            System.out.println("Cadastro realizado com sucesso!");
-            System.out.println("===============================");
-            estagiarioCriado.mostrarInformacoes();
         }
-
     }
 
     private static Professor buscarProfessor(String nomeProf , List<Professor> professores) {

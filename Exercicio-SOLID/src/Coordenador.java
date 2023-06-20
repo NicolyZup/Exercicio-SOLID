@@ -9,7 +9,7 @@ class Coordenador extends Funcionario {
         this.professoresSupervisionados = new ArrayList<>();
     }
 
-    public void aicionarProfessor(String professor) {
+    public void adicionarProfessor(String professor) {
         professoresSupervisionados.add(professor);
         System.out.println("Professor(a) "+professor+" adicionado à lista de professores supervisionados.");
     }
