@@ -39,6 +39,7 @@ meio de composição.
 ## Conteúdos aplicados e estudados:
 - estrutura de repetição: for
 - estrutura de decisão: if/else
+- listas
 - conceitos de POO
 
 ## Melhorias:
