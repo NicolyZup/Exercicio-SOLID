@@ -1,4 +1,4 @@
-# Exercicio-SOLID
+# Exercício-SOLID
 Repositório criado para entrega do exercício de modelagem de classes com herança do programa catalisa.
 
 ## Exercício proposto:
